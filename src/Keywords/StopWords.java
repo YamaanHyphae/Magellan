@@ -1,11 +1,20 @@
 package Keywords;
+import java.util.Collection;
 
 public class StopWords {
 	private String[] stringArray = {};
 	public StopWords(String[] stringArray){
 		this.stringArray = stringArray;
 	}
-	protected 
+	
+	protected String[] filter(String[] array){
+		int x = 0;
+		List<String> stringList = new LinkedList<String>(array.asList);
+		while(x < array.length){
+			
+		}
+	}
+	
 	private String[] stopWords = {"a", "about", "above", "after", "again", "against", "all", "am", "an", "and",
 		    "any", "aren't",  "as", "at", "be", "because", "been", "before", "being", "below", "between", "both", "but", "by",
 		    "can't", "cannot", "could", "Could", "couldn't", "Couldn't", "did", "Did", "didn't", "do", "does", "doesn't", "doing",
