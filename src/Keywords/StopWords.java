@@ -1,5 +1,10 @@
 package Keywords;
-import java.util.Collection;
+
+/**
+ * @author Yamaan
+ * version 0.1
+ * last updated 1/1/16
+ */
 
 public class StopWords {
 	private String[] stringArray = {};
