@@ -17,10 +17,10 @@ public class StopWords {
 	
 	private String[] stopWords = {"a", "about", "above", "after", "again", "against", "all", "am", "an", "and",
 		    "any", "aren't",  "as", "at", "be", "because", "been", "before", "being", "below", "between", "both", "but", "by",
-		    "can't", "cannot", "could", "Could", "couldn't", "Couldn't", "did", "Did", "didn't", "do", "does", "doesn't", "doing",
+		    "can't", "cannot", "could", "couldn't", "did", "Did", "didn't", "do", "does", "doesn't", "doing",
 		    "down", "during", "During", "each", "few", "for", "from", "From","further", "Further", "had", "hadn't", "has", "hasn't",
-		    "have", "haven't", "having", "he", "He", "he'd", "he'll", "he's", "her", "Her", "here", "Here", "here's", "hers",
-		    "herself", "him", "himself", "his", "how", "how's", "I", "I'd", "i'd", "I'll", "i'll", "I'm", "i'm", "I've", "i've",
+		    "have", "haven't", "having", "he", "He", "he'd", "he'll", "he's", "her", "Her", "here", "here's", "hers",
+		    "herself", "him", "himself", "his", "how", "how's", "i", "i'd", "I'll", "i'll", "I'm", "i'm", "I've", "i've",
 		    "if", "If", "in", "into", "is", "isn't", "it", "it's", "its", "itself", "let's", "me", "more", "most", "mustn't",
 		    "my", "myself", "no", "nor", "not", "of", "off", "on", "once", "only", "or", "other", "ought", "our", "ours",
 		    "ourselves", "out", "over", "own", "same", "shan't", "she", "she'd", "she'll", "she's", "should", "shouldn't",
