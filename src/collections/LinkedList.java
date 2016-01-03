@@ -26,10 +26,20 @@ public class LinkedList<T> {
 		Node<T> newHead = new Node<T>(data);
 		this.head = newHead;
 		this.head.setNext(tail);
+		this.size = 1;
 	}
 	
 	public LinkedList(T[] array){
-		
+		if (array.length == 0){
+			head.setNext(tail);
+		}
+		else{
+			int x = 0;
+			while (x < array.length){
+				
+				x++;
+			}
+		}
 	}
 	
 	public void add(Node elem){
