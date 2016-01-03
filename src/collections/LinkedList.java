@@ -7,6 +7,7 @@ package collections;
  */
 
 public class LinkedList {
-	private Node head = null;
+	
+	private Node head;
 	private Node tail = null;
 }
