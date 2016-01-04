@@ -6,53 +6,63 @@ package collections;
  * last updated: 1/2/16
  */
 
-public class LinkedList<T> {
+public class LinkedList{
 	
-	private Node<T> head;
-	private Node<T> tail;
+	private Node head;
+	private Node tail;
 	private int size = 0;
 	
 	public LinkedList(){
-		head.setNext(tail);
+		this.tail = this.head;
 	}
 	
-	public LinkedList(Node<T> head){
+	public LinkedList(Node head){
 		this.head = head;
-		this.head.setNext(tail);
+		this.tail = this.head;
 		this.size = 1;
 	}
 	
-	public LinkedList(T data){
-		Node<T> newHead = new Node<T>(data);
-		this.head = newHead;
-		this.head.setNext(tail);
+	public LinkedList(String data){
+		this.head.setData(data);
+		this.tail = this.head;
 		this.size = 1;
 	}
 	
-	public LinkedList(T[] a){
+	public LinkedList(String[] a){
 		if (a.length == 0){
-			head.setNext(tail);
+			this.tail = this.head;
 		}
 		else{
 			int x = 0;
-			Node<T> pNode = new Node<T>(null);
 			while (x < a.length){
-				pNode.changeData(a(x));
+				Node pNode = new Node(a[x]);
+				if(head == null){
+					head = pNode;
+					size = 1;
+				}
+				else{
+					tail.setNext(pNode);
+					tail = pNode;
+					size++;
+				}
 				x++;
 			}
 		}
 	}
 	
-	public void addNode(Node<T> node){
-		tail.setNext(node);
-		tail = node;
+	public void addNode(Node node){
+		if (head == null){
+			head = node;
+		}
+		else{
+			tail.setNext(node);
+			tail = node;
+		}
 		size++;
 	}
 	
-	public void addElement(T element){
-		Node<T> newNode = new Node<T>(element);
-		tail.setNext(newNode);
-		this.tail = newNode;
-		size++;
+	public void addElement(String element){
+		Node newNode = new Node(element);
+		this.addNode(newNode);
 	}
 }

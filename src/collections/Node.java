@@ -2,31 +2,31 @@ package collections;
 
 /**
  * @author Yamaan
- * version 1.0
- * last updated: 1/1/16
+ * version 1.1
+ * last updated: 1/2/16
  */
 
-public class Node<T> {
-	private T data;
-	private Node<T> next;
+public class Node {
+	private String data;
+	private Node next;
 	
-	public Node(T data){
+	public Node(String data){
 		this.data = data;
 	}
 	
-	public T getData(){
+	public String getData(){
 		return data;
 	}
 	
-	public void changeData(T data){
+	public void setData(String data){
 		this.data = data;
 	}
 	
-	public Node<T> getNext(){
+	public Node getNext(){
 		return next;
 	}
 	
-	public void setNext(Node<T> next){
+	public void setNext(Node next){
 		this.next = next;
 	}
 }
